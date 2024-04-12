@@ -5,6 +5,7 @@ import shivtrading from "../public/shivtrading.png";
 import heart from "../public/heart.png";
 import Link from "next/link";
 import Navbar from "./components/Navbar";
+import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 
 export default function Home() {
   return (
@@ -14,18 +15,20 @@ export default function Home() {
      <div className="flex flex-col md:flex md:flex-row lg:mx-40 my-4">
       <div className="w-auto md:w-[70%] px-7 md:p-8">
       <Image src={pp} alt="pp" className="md:hidden m-4 ml-16 shadow-lg shadow-gray-500 rounded-full object-cover h-[200px] w-[200px]"/>
-      <h1 className="text-3xl font-bold pb-9">Hello! I'm Neha, a developer from Nepal.</h1>
-     <p className="pb-2 text-start">I love building tools that are user-friendly, simple and delightful.</p>
-     <p className="pb-2 text-start">I was a student at Purwanchal Campus, Dharan 
+      <RoughNotationGroup show={true}>
+      <h1 className="text-3xl font-bold pb-9 tracking-wide">Hello! I'm Neha, a  <RoughNotation type="highlight"  color="#E6E6FA"> developer  </RoughNotation>  from Nepal.</h1>
+     <p className="pb-2 text-start">I love building tools that are <RoughNotation type="highlight" color="#FFB6C1">user-friendly, simple</RoughNotation>  and <RoughNotation type="highlight" color="#e2d45a">delightful</RoughNotation>.</p>
+     <p className="pb-2 text-start">I was a student at <RoughNotation type="highlight" color="#E6E6FA">Purwanchal Campus, Dharan</RoughNotation> 
       where I completed my four years Computer Engineering Course. My active participation
        in different software development workshops and competitions during my college time 
-       started my interest in Frontend Development.</p>
+       started my interest in <RoughNotation type="highlight" color="#FFB6C1">Frontend Development.</RoughNotation></p>
        <p className="pb-2 text-start">
         Through these experiences, I had the opportunity to work as a Intern in SEDS Nepal where my job 
-        was to collaborate with other teams members to make database 
+        was to <RoughNotation type="highlight" color="#e2d45a"> collaborate </RoughNotation> with other <RoughNotation type="highlight" color="#FFB6C1"> teams members </RoughNotation> to make database 
         management Software. I also got the opportunity to work as a freelancer in different website  projects.
        </p>
-       <p className="pb-2">I'm currently looking for a new role as a Frontend Developer. Hire me?</p>
+       <p className="pb-2">I'm currently looking for a new role as a Frontend Developer. <RoughNotation type="circle" color="red"> Hire me? </RoughNotation></p>
+       </RoughNotationGroup>
        <div className="flex">
         <button className="bg-black text-white text-sm hover:bg-white hover:text-black border rounded-sm px-8 py-2 m-4"> <Link href="https://www.linkedin.com/in/neha-shah-a528801b3/">View Linkedin</Link> </button>
         <button className=" border rounded-sm px-8 text-sm py-2 m-4 hover:bg-black hover:text-white"><Link href="https://github.com/nehashah4590">View Github</Link> </button>
