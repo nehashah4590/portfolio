@@ -1,5 +1,6 @@
 {
   "name": "portfolio_neha",
+  "homepage": "https://shahneha.com.np/",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "gh-pages": "^6.1.1",
     "next": "14.1.4",
     "react": "^18",
     "react-dom": "^18",
