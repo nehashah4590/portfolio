@@ -17,14 +17,14 @@ export default function Home() {
       <Image src={pp} alt="pp" className="md:hidden m-4 ml-16 shadow-lg shadow-gray-500 rounded-full object-cover h-[200px] w-[200px]"/>
       <RoughNotationGroup show={true}>
       <h1 className="text-3xl font-bold pb-9 tracking-wide">Hello! I'm Neha, a  <RoughNotation type="highlight"  color="#E6E6FA"> developer  </RoughNotation>  from Nepal.</h1>
-     <p className="pb-2 text-start">I love building tools that are <RoughNotation type="highlight" color="#FFB6C1"> <span className="block lg:inline">user-friendly, simple</span> </RoughNotation>  and <RoughNotation type="highlight" color="#e2d45a"> delightful </RoughNotation>.</p>
+     <p className="pb-2 text-start">I love building tools that are <RoughNotation type="highlight" color="#FFB6C1"> <span className="block lg:inline">user-friendly, simple</span> </RoughNotation>  and <RoughNotation type="highlight" color="#e2d45a"> delightful. </RoughNotation></p>
      <p className="pb-2 text-start">I was a student at <RoughNotation type="highlight" color="#E6E6FA"> <span className="block lg:inline"> Purwanchal Campus, Dharan </span> </RoughNotation> 
       where I completed my four years Computer Engineering Course. My active participation
        in different software development workshops and competitions during my college time 
        started my interest in <RoughNotation type="highlight" color="#FFB6C1"><span className="block lg:inline"> Frontend Development.</span>  </RoughNotation></p>
        <p className="pb-2 text-start">
         Through these experiences, I had the opportunity to work as a Intern in SEDS Nepal where my job 
-        was to <RoughNotation type="highlight" color="#e2d45a"> collaborate </RoughNotation> with other <RoughNotation type="highlight" color="#FFB6C1"> teams members </RoughNotation> to make database 
+        was to <RoughNotation type="highlight" color="#e2d45a"> collaborate </RoughNotation> with other <RoughNotation type="highlight" color="#FFB6C1"> team members </RoughNotation> to make database 
         management Software. I also got the opportunity to work as a freelancer in different website  projects.
        </p>
        <p className="pb-2">I'm currently looking for a new role as a Frontend Developer. <RoughNotation type="circle" color="red"> Hire me? </RoughNotation></p>
