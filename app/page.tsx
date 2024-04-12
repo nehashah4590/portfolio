@@ -17,11 +17,11 @@ export default function Home() {
       <Image src={pp} alt="pp" className="md:hidden m-4 ml-16 shadow-lg shadow-gray-500 rounded-full object-cover h-[200px] w-[200px]"/>
       <RoughNotationGroup show={true}>
       <h1 className="text-3xl font-bold pb-9 tracking-wide">Hello! I'm Neha, a  <RoughNotation type="highlight"  color="#E6E6FA"> developer  </RoughNotation>  from Nepal.</h1>
-     <p className="pb-2 text-start">I love building tools that are <RoughNotation type="highlight" color="#FFB6C1">user-friendly, simple</RoughNotation>  and <RoughNotation type="highlight" color="#e2d45a">delightful</RoughNotation>.</p>
-     <p className="pb-2 text-start">I was a student at <RoughNotation type="highlight" color="#E6E6FA">Purwanchal Campus, Dharan</RoughNotation> 
+     <p className="pb-2 text-start">I love building tools that are <RoughNotation type="highlight" color="#FFB6C1"> <span className="block lg:inline">user-friendly, simple</span> </RoughNotation>  and <RoughNotation type="highlight" color="#e2d45a"> delightful </RoughNotation>.</p>
+     <p className="pb-2 text-start">I was a student at <RoughNotation type="highlight" color="#E6E6FA"> <span className="block lg:inline"> Purwanchal Campus, Dharan </span> </RoughNotation> 
       where I completed my four years Computer Engineering Course. My active participation
        in different software development workshops and competitions during my college time 
-       started my interest in <RoughNotation type="highlight" color="#FFB6C1">Frontend Development.</RoughNotation></p>
+       started my interest in <RoughNotation type="highlight" color="#FFB6C1"><span className="block lg:inline"> Frontend Development.</span>  </RoughNotation></p>
        <p className="pb-2 text-start">
         Through these experiences, I had the opportunity to work as a Intern in SEDS Nepal where my job 
         was to <RoughNotation type="highlight" color="#e2d45a"> collaborate </RoughNotation> with other <RoughNotation type="highlight" color="#FFB6C1"> teams members </RoughNotation> to make database 
@@ -47,14 +47,14 @@ export default function Home() {
       <div className="lg:h-[60vh] lg:w-[35vw] p-2">
         <Image src={GPTNepal} alt="project" className=" shadow-lg shadow-gray-500 rounded-lg object-cover"/>
         <h2 className="p-2 font-bold text-2xl mt-4">GPT Nepal</h2> 
-        <p className="px-2 pb-2">A web based QA App based on transformer model.</p>
-        <Link href="https://vercel.com/nehashah4590s-projects/qa-app"><p className="font-semibold text-md px-2">View Project</p></Link>
+        <p className="px-2 pb-2">It is a web based QA App for tourist visiting Nepal based on transformer model.</p>
+        <Link href="https://vercel.com/nehashah4590s-projects/qa-app"><p className="font-semibold text-md px-2 hover:text-gray-500">View Project</p></Link>
       </div>
       <div className=" lg:h-[60vh] lg:w-[35vw] p-2">
         <Image src={shivtrading} alt="project" className=" shadow-lg shadow-gray-500 rounded-lg object-cover"/>
         <h2 className="p-2 font-bold text-2xl mt-4">Shiv trading</h2>  
-        <p className="px-2 pb-2">It is a tiles and marble displaying website. </p>
-        <Link href="https://shiv-trading.com"><p className="font-semibold text-md px-2">View Project</p></Link>       
+        <p className="px-2 pb-2">It is a tiles and marble website where users can search there favorite tiles and marbles design according to sizes and areas. </p>
+        <Link href="https://shiv-trading.com"><p className="font-semibold text-md px-2 hover:text-gray-500">View Project</p></Link>       
       </div>
       </div>
      </div>
