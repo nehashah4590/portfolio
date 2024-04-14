@@ -30,8 +30,8 @@ export default function Home() {
        <p className="pb-2">I'm currently looking for a new role as a Frontend Developer. <RoughNotation type="circle" color="red"> Hire me? </RoughNotation></p>
        </RoughNotationGroup>
        <div className="flex">
-        <button className="bg-black text-white text-sm hover:bg-white hover:text-black border rounded-sm px-8 py-2 m-4"> <Link href="https://www.linkedin.com/in/neha-shah-a528801b3/">View Linkedin</Link> </button>
-        <button className=" border rounded-sm px-8 text-sm py-2 m-4 hover:bg-black hover:text-white"><Link href="https://github.com/nehashah4590">View Github</Link> </button>
+        <button className="bg-black text-white text-sm hover:bg-white hover:text-black border rounded-sm px-8 py-2 m-4"> <Link href="https://www.linkedin.com/in/neha-shah-a528801b3/" target="blank">View Linkedin</Link> </button>
+        <button className=" border rounded-sm px-8 text-sm py-2 m-4 hover:bg-black hover:text-white"><Link href="https://github.com/nehashah4590" target="blank">View Github</Link> </button>
        </div>
       </div>
       <div className="hidden md:flex justify-center py-8 pb-12 md:pr-2 lg:pr-0">
@@ -48,13 +48,13 @@ export default function Home() {
         <Image src={GPTNepal} alt="project" className=" shadow-lg shadow-gray-500 rounded-lg object-cover"/>
         <h2 className="p-2 font-bold text-2xl mt-4">GPT Nepal</h2> 
         <p className="px-2 pb-2">It is a web based QA App for tourist visiting Nepal based on transformer model.</p>
-        <Link href="https://vercel.com/nehashah4590s-projects/qa-app"><p className="font-semibold text-md px-2 hover:text-gray-500">View Project</p></Link>
+        <Link href="https://qa-app-ten.vercel.app/" target="blank"><p className="font-semibold text-md px-2 hover:text-gray-500">View Project</p></Link>
       </div>
       <div className=" lg:h-[60vh] lg:w-[35vw] p-2">
         <Image src={shivtrading} alt="project" className=" shadow-lg shadow-gray-500 rounded-lg object-cover"/>
         <h2 className="p-2 font-bold text-2xl mt-4">Shiv trading</h2>  
         <p className="px-2 pb-2">It is a tiles and marble website where users can search there favorite tiles and marbles design according to sizes and areas. </p>
-        <Link href="https://shiv-trading.com"><p className="font-semibold text-md px-2 hover:text-gray-500">View Project</p></Link>       
+        <Link href="https://shiv-trading.com" target="blank"><p className="font-semibold text-md px-2 hover:text-gray-500">View Project</p></Link>       
       </div>
       </div>
      </div>
@@ -63,9 +63,9 @@ export default function Home() {
         <div className="lg:mx-40 my-20 m-2 " id="contact">
       <h1 className="pb-2 text-4xl font-bold">Get in touch</h1>
       <p className="pb-28">Do you have a job opportunity or idea you'd like to discuss? Feel free to reach me at<span className="bg-gradient-to-r from-red-500 to-yellow-500 text-transparent bg-clip-text font-semibold"> er.nehashah822@gmail.com.</span> You
-      can also find me on <Link href="https://twitter.com/Ne_ha_Sh_ah" className="bg-gradient-to-r from-red-500 to-yellow-500 text-transparent bg-clip-text font-semibold">Twitter</Link>, 
-       <Link href="https://github.com/nehashah4590" className="bg-gradient-to-r from-red-500 to-yellow-500 text-transparent bg-clip-text font-semibold"> Github</Link> and 
-       <Link href="https://www.linkedin.com/in/neha-shah-a528801b3/" className="bg-gradient-to-r from-red-500 to-yellow-500 text-transparent bg-clip-text font-semibold"> Linkedin.</Link></p>
+      can also find me on <Link href="https://twitter.com/Ne_ha_Sh_ah" target="blank" className="bg-gradient-to-r from-red-500 to-yellow-500 text-transparent bg-clip-text font-semibold">Twitter</Link>, 
+       <Link href="https://github.com/nehashah4590" target="blank" className="bg-gradient-to-r from-red-500 to-yellow-500 text-transparent bg-clip-text font-semibold"> Github</Link> and 
+       <Link href="https://www.linkedin.com/in/neha-shah-a528801b3/" target="blank" className="bg-gradient-to-r from-red-500 to-yellow-500 text-transparent bg-clip-text font-semibold"> Linkedin.</Link></p>
       <hr/>
       <p className="py-8 flex pb-32">Built with TypeScript, Tailwind and Next.js <Image src={heart} alt="heart" className="h-[22px] w-[22px] mt-[1px] mx-1"/></p>
       </div>
