@@ -35,7 +35,7 @@ export default function Home() {
        </div>
       </div>
       <div className="hidden md:flex justify-center py-8 pb-12 md:pr-2 lg:pr-0">
-          <Image src={pp} alt="pp" className=" shadow-lg shadow-gray-500 rounded-lg object-cover"/>
+          <Image src={pp} alt="pp" className=" shadow-lg shadow-gray-500 rounded-lg object-cover h-[350px] w-[274px]"/>
       </div>
      </div>
 
