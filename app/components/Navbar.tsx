@@ -14,9 +14,9 @@ const Navbar: React.FC<NavbarProps> = ({ contact, project})=>{
   const [isOpen, setIsOpen]= useState(false);
 
   return (
-    <div className='h-[80px] p-2 flex flex-col md:flex md:flex-row font-semibold lg:mx-40'>
+    <div className='h-[80px] p-2 flex flex-col md:flex md:flex-row  lg:mx-20 text-xl tracking-wider'>
       <div className=' h-full w-full  p-2 flex justify-between items-center'>
-        <h1 className=' px-2 tracking-[1px] hover:text-gray-500'><Link href="./">NEHA SHAH</Link></h1>
+        <h1 className=' px-2 lg:ml-12 hover:text-gray-500'><Link href="./">NEHA SHAH</Link></h1>
         <button
           type='button'
           className='md:hidden '
@@ -26,7 +26,7 @@ const Navbar: React.FC<NavbarProps> = ({ contact, project})=>{
       </div>
      
         <div className='h-full p-2 md:mx-8 md:px-8 flex  items-center w-full justify-start md:justify-end'>
-        <ul className={` lg:mr-6  gap-10  ${isOpen? "sm:absolute sm:top-12 bg-white shadow-md md:shadow-none w-full p-2 mt-2 md:mt-0 md:p-0 z-20 md:static md:flex md:justify-end md:items-center":"hidden md:flex justify-center items-center"}`}>
+        <ul className={`   gap-10  ${isOpen? "sm:absolute sm:top-12 bg-white shadow-md md:shadow-none w-full p-2 mt-2 md:mt-0 md:p-0 z-20 md:static md:flex md:justify-end md:items-center":"hidden md:flex justify-center items-center"}`}>
           <Link href="./"><li className='hover:text-gray-400'>About</li></Link>
           <Link href={`#${project}`} ><li className='hover:text-gray-500'>Projects</li></Link>
           <Link href={`#${contact}`} ><li className='hover:text-gray-500'>Contact</li></Link>
