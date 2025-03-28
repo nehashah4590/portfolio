@@ -59,7 +59,7 @@ export default function Navbar() {
           ))}
           <ModeToggle />
           <Button size="sm">
-            <a href="/neha_resume.pdf" target="_blank" rel="noopener noreferrer">
+            <a href="/neha_resume.pdf" target="_blank" >
                 Resume
               </a>
             </Button>
@@ -91,7 +91,7 @@ export default function Navbar() {
               </Link>
             ))}
             <Button size="sm" className="w-full">
-              <a href="/neha_resume.pdf" target="_blank" rel="noopener noreferrer">
+              <a href="/neha_resume.pdf" target="_blank" >
                 Resume
               </a>
             </Button>
