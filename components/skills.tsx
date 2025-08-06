@@ -42,12 +42,12 @@ export default function Skills() {
     {
       title: "Frontend Development",
       icon: <Layout className="h-8 w-8 text-primary" />,
-      skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "HTML/CSS", "JavaScript", "Bootstrap", "Redux"],
+      skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "HTML/CSS", "JavaScript", "Bootstrap", "Redux","Angular"],
     },
     {
       title: "Backend Development",
       icon: <Server className="h-8 w-8 text-primary" />,
-      skills: ["Node.js", "Express","RESTful APIs"],
+      skills: ["Python","FastAPI","Node.js", "Express","RESTful APIs"],
     },
     {
       title: "Database",

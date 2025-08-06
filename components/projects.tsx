@@ -51,12 +51,23 @@ export default function Projects() {
 
   const projects = [
     {
+      title: "Aecorms",
+      description:
+        `A comprehensive software for managing candidates and trainers to creating batches, assigning
+         certificates, and track progress  of the candidates and batches.`,
+      image: "/aecorms.png",
+      tags: ["Reactjs","Typescript", "Tailwind CSS", "Shadcn"],
+      liveUrl: "https://qa.aecorms.com/",
+      githubUrl: "https://github.com",
+      featured: true,
+    },
+    {
       title: "E-Commerce Platform",
       description:
         "A full-stack e-commerce platform with product management, user authentication, and guest checkout.",
       image: "/elevationinc.png",
-      tags: ["Next.js", "Tailwind CSS", "Shadcn", "Next Auth", "Redux", "Redux Toolkit"],
-      liveUrl: "https://dev.elevationsnepal.com/",
+      tags: ["Next.js","Typescript", "Tailwind CSS", "Shadcn", "Next Auth", "Redux", "Redux Toolkit"],
+      liveUrl: "https://elevationsnepal.com/",
       githubUrl: "https://github.com",
       featured: true,
     },
