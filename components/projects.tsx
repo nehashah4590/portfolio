@@ -50,74 +50,77 @@ export default function Projects() {
   }, [])
 
   const projects = [
-    {
-      title: "Aecorms",
-      description:
-        `A comprehensive software for managing candidates and trainers to creating batches, assigning
-         certificates, and track progress  of the candidates and batches.`,
-      image: "/aecorms.png",
-      tags: ["Reactjs","Typescript", "Tailwind CSS", "Shadcn"],
-      liveUrl: "https://qa.aecorms.com/",
-      githubUrl: "https://github.com",
-      featured: true,
-    },
-    {
-      title: "E-Commerce Platform",
-      description:
-        "A full-stack e-commerce platform with product management, user authentication, and guest checkout.",
-      image: "/elevationinc.png",
-      tags: ["Next.js","Typescript", "Tailwind CSS", "Shadcn", "Next Auth", "Redux", "Redux Toolkit"],
-      liveUrl: "https://elevationsnepal.com/",
-      githubUrl: "https://github.com",
-      featured: true,
-    },
-    {
-      title: "Travel Booking App",
-      description:
-        "A website showcasing curated travel destinations with custom-designed themes, offering users the ability to easily browse and book tailored travel packages.",
-      image: "/travelingyak.png",
-      tags: ["Next.js", "Tailwind CSS", "shadcn", "Framer Motion"],
-      liveUrl: "https://travelingyak.com/",
-      githubUrl: "https://github.com",
-      featured: true,
-    },
-    {
-      title: "70 years celebration of climbing kanchenjunga",
-      description: "A static website dedicated to preserving and showcasing the history and milestones of the first climbing expedition, celebrating its 70th anniversary with detailed information and historical archives.",
-      image: "/k70.png",
-      tags: ["Next.js", "Tailwind CSS" ],
-      liveUrl: "https://kanchenjunga70.com/",
-      githubUrl: "https://github.com",
-      featured: true,
-    },
+    // {
+    //   title: "Aecorms",
+    //   description:
+    //     `A comprehensive software for managing candidates and trainers to creating batches, assigning
+    //      certificates, and track progress  of the candidates and batches.`,
+    //   image: "/aecorms.png",
+    //   tags: ["Reactjs","Typescript", "Tailwind CSS", "Shadcn"],
+    //   liveUrl: "https://qa.aecorms.com/",
+    //   githubUrl: "https://github.com",
+    //   featured: true,
+    // },
+    // {
+    //   title: "E-Commerce Platform",
+    //   description:
+    //     "A full-stack e-commerce platform with product management, user authentication, and guest checkout.",
+    //   image: "/elevationinc.png",
+    //   tags: ["Next.js","Typescript", "Tailwind CSS", "Shadcn", "Next Auth", "Redux", "Redux Toolkit"],
+    //   liveUrl: "https://elevationsnepal.com/",
+    //   githubUrl: "https://github.com",
+    //   featured: true,
+    // },
+    // {
+    //   title: "Travel Booking App",
+    //   description:
+    //     "A website showcasing curated travel destinations with custom-designed themes, offering users the ability to easily browse and book tailored travel packages.",
+    //   image: "/travelingyak.png",
+    //   tags: ["Next.js", "Tailwind CSS", "shadcn", "Framer Motion"],
+    //   liveUrl: "https://travelingyak.com/",
+    //   githubUrl: "https://github.com",
+    //   featured: true,
+    // },
+    // {
+    //   title: "70 years celebration of climbing kanchenjunga",
+    //   description: "A static website dedicated to preserving and showcasing the history and milestones of the first climbing expedition, celebrating its 70th anniversary with detailed information and historical archives.",
+    //   image: "/k70.png",
+    //   tags: ["Next.js", "Tailwind CSS" ],
+    //   liveUrl: "https://kanchenjunga70.com/",
+    //   githubUrl: "https://github.com",
+    //   featured: true,
+    // },
     {
       title: "Custom Construction Management ERP",
       description: "A comprehensive ERP solution to streamline complex construction management operations, including estimating, procurement, inventory, project management, asset management, and financials.",
       image: "/lancozen.webp",
       tags: ["Next.js", "Tailwind CSS", "Shadcn", "Next Auth", "Zustang", "Tanstack Query"],
-      liveUrl: "https://www.lancozen.com/",
-      githubUrl: "https://github.com",
+      featured: false,
+      // liveUrl: "https://www.lancozen.com/",
+      // githubUrl: "https://github.com",
     },
     {
       title: "Business Website",
       description: "A comprehensive website for a tiles and marbles business, offering a detailed catalog of available tiles, marbles, and sanitary products. Users can easily browse through various product categories, view detailed specifications, including sizes and finishes, and explore a wide range of design options to suit their needs.",
       image: "/shiv-trading.png",
       tags: ["Next js", "Tailwind CSS", "Next Auth", "Framer Motion"],
-      liveUrl: "https://shiv-trading.com",
-      githubUrl: "https://github.com",
+      featured: false,
+      // liveUrl: "https://shiv-trading.com",
+      // githubUrl: "https://github.com",
     },
     {
       title: "Customer Management System",
       description: "A comprehensive Customer Management System (CMS) designed for supermarkets, enabling efficient tracking of customer purchases. The system provides detailed insights into customer behavior, purchase history, and preferences, allowing for enhanced customer engagement, personalized marketing, and streamlined sales management.",
       image: "/CMS.png",
       tags: ["Next.js", "Expressjs", "PostgresSQL", "Vercel"],
-      liveUrl: "https://customer-management-system-pi-navy.vercel.app",
-      githubUrl: "https://github.com/nehashah4590/customer_management_system",
+      featured: false,
+      // liveUrl: "https://customer-management-system-pi-navy.vercel.app",
+      // githubUrl: "https://github.com/nehashah4590/customer_management_system",
     },
   ]
 
-  const featuredProjects = projects.filter((project) => project.featured)
-  const otherProjects = projects.filter((project) => !project.featured)
+  // const featuredProjects = projects.filter((project) => project.featured)
+   const otherProjects = projects.filter((project) => !project.featured)
 
   return (
     <section id="projects" ref={sectionRef} className="py-20 md:py-32">
@@ -133,7 +136,7 @@ export default function Projects() {
           </p>
 
           {/* Featured Projects */}
-          <div className="space-y-24 mb-24">
+          {/* <div className="space-y-24 mb-24">
             {featuredProjects.map((project, index) => (
               <div
                 key={project.title}
@@ -175,7 +178,7 @@ export default function Projects() {
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
 
           {/* Other Projects */}
           <h3 className="text-2xl font-bold mb-8 text-center">Other Projects</h3>
@@ -209,7 +212,7 @@ export default function Projects() {
                       </Badge>
                     )} */}
                   </div>
-                  <div className="flex gap-4">
+                  {/* <div className="flex gap-4">
                     <Button asChild size="sm" variant="ghost">
                       <Link href={project.githubUrl} target="_blank" rel="noopener noreferrer">
                         <Github className="h-4 w-4" />
@@ -222,7 +225,7 @@ export default function Projects() {
                         <span className="sr-only">Live Demo</span>
                       </Link>
                     </Button>
-                  </div>
+                  </div> */}
                 </CardContent>
               </Card>
             ))}
